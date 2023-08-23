@@ -7,11 +7,15 @@ public class Main {
 
 
         // fazer uma conexao http
-        String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopTVs.json"; //salvando a URL em uma variavel
-        ExtratorDeConteudo extratorConteudo = new ExtraiConteudo();
+        //String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopTVs.json"; //salvando a URL em uma variavel
+        //ExtratorDeConteudo extratorConteudo = new ExtraiConteudo();
 
         //String url ="https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2023-01-12&end_date=2023-01-16";
         //ExtratorDeConteudo extratorConteudo = new ExtraiConteudoNasa();
+
+        //minha api
+        String url = "http://localhost:8080/linguagens";
+        ExtratorDeConteudo extratorConteudo = new ExtraiConteudo();
 
         var http = new ClientHttp();
         String json = http.buscaDados(url);

@@ -23,12 +23,12 @@ public class Stickers {
         graphics.drawImage(imageOri,0,0 ,null);
 
         //fonte
-        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 100);
+        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 50);
         graphics.setColor(Color.cyan);
         graphics.setFont(fonte);
 
         //escrever uma frase na nova imagem
-        graphics.drawString( "eu amo", 0, novaAltura - 100);
+        graphics.drawString( "eu te amo", 0, novaAltura - 100);
         //escrever a nova imagem em um arquivo
         ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));
     }
